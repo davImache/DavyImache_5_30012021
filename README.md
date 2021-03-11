@@ -25,8 +25,7 @@ par le serveur.
 
 Technologies utilisées :
                                                                                   
--HTML, CSS, JavaScript.
--Faire appel à une API.
+-HTML, CSS, JavaScript, Faire appel à une API.
 
 
 
