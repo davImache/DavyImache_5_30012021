@@ -1,3 +1,9 @@
 node_modules
-.idea
+package.json
 package-lock.json
+../vscode
+../Frontend/js/package.json
+../Frontend/js/package-lock.json
+../Frontend/js/.eslintrc.json
+.idea
+
