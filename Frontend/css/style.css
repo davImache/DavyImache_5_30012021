@@ -1,0 +1,363 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+.site_content {
+  width: 85%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 2rem;
+  padding-right: 20%;
+  font-family: "Pacifico", cursive;
+  color: black;
+}
+/* *{
+    border: 1px solid;
+} */
+/*--------------Header--------------- */
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #b26d9b;
+  border-radius: 10px;
+  margin: 2% auto 1.5% auto;
+  padding: 0 50px;
+  background-color: #f3e9f1;
+}
+header img {
+  width: 250px;
+}
+header a {
+  color: #975fe7;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+header a:nth-child(2):before {
+  content: "\f07a";
+  font-family: "Font Awesome 5 Free";
+  padding: 10px 5px 0 0;
+}
+header a:nth-child(2){
+  padding: 10px 5px 0 17px;
+}
+.logo,
+.logo a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/*--------------Section Products------------- */
+.products{
+  border-radius: 10px;
+  background-color: #f3e9f1;
+  border: 2px solid #b26d9b;
+  padding: 10px 0;
+}
+.products a {
+  text-decoration: none;
+  text-transform: none;
+  color: black;
+}
+.products h2 {
+  margin-bottom: 0;
+  width: 85%;
+  margin: 10px auto;
+  font-family: cursive;
+  font-size: 1.2rem;
+}
+.products figure {
+  display: flex;
+  border: 1.2px solid #d2803d;
+  margin: 16px auto;
+  width: 85%;
+  min-height: 230px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px;
+  background-color: #eee;
+  cursor: pointer;
+}
+.products figure:hover{
+  box-shadow: 5px 5px 15px;
+}
+.products figure figcaption {
+  margin: 10px;
+}
+.products figure img {
+  width: 350px;
+  border-radius: 10px;
+}
+.products figcaption p:nth-child(1) {
+  font-weight: bold;
+  font-size: 20px;
+}
+.products figcaption p:nth-child(2) {
+  font-weight: 500;
+  color: red;
+  padding: 0;
+  margin: 10px 0px 0px 0px;
+}
+figcaption p:nth-child(3) {
+  color: #383838;
+}
+.details {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+/*--------------Product Page ------------- */
+.products, .product {
+  border-radius: 10px;
+  background-color: #f3e9f1;
+  border: 2px solid #b26d9b;
+}
+.product figure, .product figure p, .product h2  {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.product figure img{
+  width: 420px;
+  border: 1.2px solid #d2803d;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px;
+  background-color: #eee;
+  cursor: pointer;
+}
+.product figcaption p:nth-child(1) {
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+}
+.product figcaption p:nth-child(2) {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+.product button{
+   border: 2px solid #b26d9b;
+   border-radius: 10px;
+   background-color: #d2803d;
+   box-shadow: 1px 1px 8px;
+   padding: 15px;
+   width: 30%;
+   margin: -1% 35%  5% 35%;
+   color: #fff;
+   font-weight: bold;
+   cursor: pointer;
+   transition: all .5s;
+}
+     
+ .product button:hover{
+  filter: opacity(70%);
+  transform: scale(1.1);
+  box-shadow: 0px 3px 7px black;
+  cursor: pointer;
+}
+
+
+/*--------------Section information------------- */
+.section_information {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: center;
+  border: 2px solid #b26d9b;
+  border-radius: 10px;
+  background-color: #f3e9f1;
+}
+.content_table {
+  width: 100%;
+  margin: 3% auto;
+}
+/*----------Table information---------- */
+table,
+td {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  width: 50%;
+  margin: 7% auto;
+}
+table thead {
+  background-color: #333;
+  color: #fff;
+}
+th,
+td {
+  padding: 10px 30px;
+  text-align: center;
+}
+.content_information {
+  width: 100%;
+  margin: 7% auto;
+}
+/*----------Form information---------- */
+form {
+  width: 100%;
+  margin: 0 auto;
+}
+form input {
+  border: 2px solid black;
+  padding: 5px 18px;
+  margin: 5px 15px;
+}
+form label {
+  font-weight: bold;
+  padding: 5px;
+}
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0px;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+/*--------------Fieldset on form and table------------- */
+fieldset {
+  width: 85%;
+  margin: 9px;
+  border: 2px solid #b26d9b;
+  border-radius: 10px;
+  background-color: #eed8ea;
+}
+fieldset legend, .confirm button/*(button sur la page confirm.html)*/ { 
+  border: 3px solid #333;
+  background-color: rgb(151, 128, 98);
+  color: rgb(255, 232, 202);
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 7px;
+}
+/*--------------Page comfirm------------- */
+.confirm{
+  text-align: center;
+  display: block;
+  width: 99%;
+  margin: 7px auto;
+  border-radius: 10px;
+  border: 2px solid #858585;
+  background-color: #eed8ea;
+}
+.confirm p:nth-of-type(1), p:nth-of-type(2) {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px 0;
+}
+.fa-check{
+  color: green;
+}
+.fa-thumbs-up{
+  color: blue;
+}
+.orderNumber{
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #975fe7;
+}
+.confirm button{
+   margin-bottom: 10px;
+}
+
+/*--------------Footer------------- */
+footer {
+  background-color: #f3e9f1;
+  border: 2px solid #b26d9b;
+  margin-top: 6px;
+  font-weight: bold;
+  border-radius: 10px;
+  min-height: 80px;
+}
+footer ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer ul a {
+  text-decoration: none;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+footer ul li {
+  text-align: center;
+  padding: 7px 0;
+  color: black;
+  justify-content: space-around;
+}
+/*-----------------Media queries--------------- */
+
+@media screen and (max-width: 750px) {
+  /*-----------Header--------- */
+
+  header img {
+    width: 170px;
+    margin-left: -40px;
+  }
+  header h1 {
+    font-size: 1.6rem;
+  }
+  /*-----Page Products-------*/
+  .products figure {
+    display: grid;
+    width: 85%;
+    margin: 15px auto;
+  }
+  .products figure img  {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .products figcaption p:nth-child(1) {
+    margin: 0;
+  }
+  /*-----Page Product-------*/
+  .product figure img {
+    width: 245px;
+  }
+  .product button {
+    padding: 15px;
+    width: 80%;
+    margin: 10% 10% 10% 10%;
+  }
+  /*------Form information-----*/
+  form * {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 5px auto;
+  }
+  form input {
+    border: 2px solid black;
+    margin: 0;
+  }
+  form div:nth-of-type(3) {
+    margin-top: 15px;
+  }
+  .section_information {
+    display: block;
+  }
+  th,
+  td {
+    padding: 8px 15px;
+  }
+  fieldset {
+    margin: 8px auto;
+  }
+  footer ul {
+    display: block;
+  }
+}
