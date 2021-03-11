@@ -1,6 +1,8 @@
-     Projet 5 : Construisez un site e-commerce (Projet d'OpenClassRooms)
+                                               Projet 5 : Construisez un site e-commerce (Projet d'OpenClassRooms)
+                                               
 
-                     Architecture générale
+                                                               Architecture générale :
+                                                               
 
 L’application web sera composée de 4 pages :
 
@@ -20,12 +22,14 @@ renvoyées au back-end. Par exemple, pas de texte dans les champs date ;
 commande, et indiquant le prix total et l'identifiant de commande envoyé
 par le serveur.
 
-                      Technologies utilisées
+                                                                  Technologies utilisées
+                                                                  
                             
 -HTML, CSS, JavaScript.
 -Faire appel à une API.
 
-                       Informations complémentaires
+                                                               Informations complémentaires
+                                                               
                                      
 -Pour le MVP, la personnalisation du produit ne sera pas fonctionnelle : la page
 contenant un seul article aura un menu déroulant permettant à l'utilisateur de choisir
