@@ -1,21 +1,20 @@
-//1 Récuperer l'id des produits et initialisation des variables
+// Récupérer l'id des produits et initialisation des variables
 const searchParams = new URLSearchParams(window.location.search)
 const id = searchParams.get("id");
 const urlAPI = "http://localhost:3000/api/cameras/" + id;
 var productInfo;
 
 
-//2 Faire appelle à l'API et retourner la réponse au format JSON 
+// Création d'une fonction pour faire appel à l'API et retourner les données au format JSON 
 async function getData (url) {
   let reponse = await fetch(url);
   return await reponse.json();
 };
 
-
-//3 Récuper les données de l'API 
+// Récupérer les données de l'API et ajout du produit sur la page html
 async function addProduct() {
   productInfo = await getData(urlAPI);
-  //4 Ajout du produit sur la page
+  //Ajouter les informations des produits dans le html
   let html = `<h2>Appareils : ${productInfo.name}</h2>
           <figure>
             <img src="${productInfo.imageUrl}">
@@ -26,24 +25,21 @@ async function addProduct() {
                 }</p>
               </figcaption>
           </figure>
-          <label for="optionLenses">Choix des lentilles:</label>
-                <select id="optionLenses">
-                ${addOptionLense()}   
-                </select> 
+          <div class = "optionLenses">
+              <label for="optionLenses">Choix des lentilles:</label>
+              <select id="optionLenses">
+              ${addOptionLense()}   
+              </select>
+          </div>
           <button onclick="addToCart()">Ajouter au panier</button>`;
           document.querySelector(".product").innerHTML = html;
 };
 addProduct();
 
 
-//6 Initialisation des variables pour les lentilles
-const lenses = searchParams.get("lenses");
-const optionLenses = "http://localhost:3000/api/cameras/" + lenses;
-var selectLenses; 
-
-//7 Récupérer les données pour le choix de la lentille
+// Récupérer les données pour le choix de la lentille
 function addOptionLense() {
-  console.log(productInfo.lenses);
+
   let html="";
   for (let i = 0; i < productInfo.lenses.length; i++) { 
     html +=`<option>${productInfo.lenses[i]}</option>`
@@ -51,10 +47,11 @@ function addOptionLense() {
   return html;
 }
 
- //8 Ajout du produit au panier
-  function addToCart() {
+ // Ajout du produit au panier
+function addToCart() {
     let panier = localStorage.getItem("cart");
-    if (panier === null) panier = {};
+    if (panier === null) 
+    panier = {};
     else panier = JSON.parse(panier);
 
     if (panier[productInfo._id] === undefined) {
@@ -65,7 +62,10 @@ function addOptionLense() {
       };
     } else panier[productInfo._id].qty++;
     localStorage.setItem("cart", JSON.stringify(panier));
-  }
+    alert("Ajouter au panier ! ")
+    console.log(panier)
+}
+
 
 
   

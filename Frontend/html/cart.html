@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/f463affa35.js" crossorigin="anonymous"></script>
+    <!-- <script src="../js/confirmPage.js" defer></script> -->
     <script src="../js/cartPage.js" defer></script>
-     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>Orinoco</title>
 </head>
@@ -18,7 +19,7 @@
             <header>
                 <div class="logo">
                     <a href="index.html">
-                        <img src="logoOrinoco.jpg"> 
+                        <img src="./image/logoOrinoco.jpg"> 
                     </a>
                 </div>
                 <a href="cart.html">Panier</a>
@@ -35,11 +36,12 @@
                                     <th>Prix</th>
                                 </tr>
                             </thead>
+                            <tfood>
+                                <td></td>
+                            </tfood>
                             <tbody>
                                 <tr>
-                                    <td>Zurss 50S</td>
-                                    <td>1</td>
-                                    <td>499€</td>
+                                    <td class="total" colspan = "3">Total : </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -47,35 +49,41 @@
                 </fieldset>
                 
                 <div class="content_information">
-                    <form action="" method="get" class="">
-                        <fieldset>
-                            <legend>Formulaire de Contact</legend>
+                    <fieldset>
+                        <legend>Formulaire de Contact</legend>
+                        <form action="" method="get" id="form">
+                          
                             <div class="form_information">
                                 <label for="name">Nom : </label>
-                                <input type="text" name="name" id="name" placeholder="Votre nom..." required>
+                                <input type="text" name="lastName" id="lastName" placeholder="Votre nom..." required>
+                                <small></small>
                             </div>
                             <div class="form_information">
                                 <label for="firstName">Prénom : </label>
-                                <input type="text" name="firstName" id="firstnName" placeholder="Votre prénom..." required>
+                                <input type="text" name="firstName" id="firstName" placeholder="Votre prénom..." required>
+                                <small></small>
                             </div>
                             <div class="form_information">
                                 <label for="email">Mail: </label>
                                 <input type="email" name="email" id="email" placeholder="Votre email..." required>
+                                <small></small>
                             </div>
                             <div class="form_information">
                                 <label for="adress">Adresse : </label>
                                 <input type="adress" name="adress" id="adress" placeholder="Votre adresse..." required>
+                                <small></small>
                             </div>
                             <div class="form_information">
-                                <label for="city">Ville : </label>
-                                <input type="text" name="cityl" id="city" placeholder="Votre ville..." required>
+                                <label for="city">Code postal : </label>
+                                <input type="text" name="city" id="city" placeholder="ex : 31000" maxlength="5" required>
+                                <small></small>
                             </div>
                             <div class="form_information">
                                 <input class="btn" type="submit" value="Commander">
-                            </div>
-                        </fieldset>
-                        
-                    </form>
+                            </div>  
+                        </form>
+                    </fieldset>
+                    
                 </div>
 
             </section>
